@@ -117,6 +117,18 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
 }
+header nav {
+    width: 60%;
+}
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
+/* Header styles */
+ 
+header {
+    padding: 15px 0;
+}
   /* ==========================================================================
 	 Helper classes
 	 ========================================================================== */
