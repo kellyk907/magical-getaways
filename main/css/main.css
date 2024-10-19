@@ -130,6 +130,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    list-style: none;
   }
   
   footer {
@@ -375,6 +376,7 @@
     header .content-wrapper {
       width: 100%;
       justify-content: space-between;
+      l
     }
   
     header nav {
@@ -447,7 +449,7 @@
     }
   
     /* ==========================================================================
-       About Page
+       About Page  Tablet 
        ========================================================================== */
   
     .mission-content {
@@ -470,9 +472,9 @@
       justify-content: space-between;
       align-items: flex-start;
     }
-  
+
     /* ==========================================================================
-       FAQ Page
+       FAQ Page Tablet 
        ========================================================================== */
   
     .faq .content-wrapper {
