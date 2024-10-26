@@ -27,12 +27,12 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #DEE1FA;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #DEE1FA;
   text-shadow: none;
 }
 
@@ -140,11 +140,19 @@ h4 {
 img{
  width:100%;
 }
+
+figure{
+  margin: 0;
+}
+
 p {
   font-size: .875em;
   line-height: 1.285;
 }
-
+.reviews img{
+  height:100px; 
+  width:125px;
+}
 address {
   font-style: normal;
 }
@@ -163,12 +171,17 @@ header {
   background-color: #DEE1FA;
 }
 
+
 header .content-wrapper {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -200,7 +213,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color:#DEE1FA;
+  background-color: #4d2b6091;
 }
 
 footer p {
@@ -236,6 +249,9 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/bkgd.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
@@ -283,9 +299,14 @@ input[type=button] {
 
 /* Features */
 
+
 .features {
-  display: flex;
-  justify-content: center;
+  background: url(../img/features.jpeg);
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  justify-content:center;
+  /* background-repeat:repeat; */
 }
 
 .features h2 {
@@ -314,7 +335,7 @@ input[type=button] {
 .reviews {
   background-color:  #6b73be91;
   display: flex;
-  justify-content: center;
+  justify-content:right;
 }
 
 .reviews h2 {
@@ -351,8 +372,8 @@ input[type=button] {
    FAQ Page
    ========================================================================== */
 
-.faq {
-  background-color: #DEE1FA;
+.faq { 
+  background-color:#6b73be91;
   display: flex;
   justify-content: center;
 }
@@ -372,6 +393,7 @@ input[type=button] {
 
 .faq-content {
   margin-bottom: 50px;
+
 }
 
 .faq-content h4 {
@@ -514,6 +536,10 @@ input[type=button] {
 
   /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -545,6 +571,7 @@ input[type=button] {
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
+    
   }
 
   .features .features-item-description {
