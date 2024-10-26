@@ -368,6 +368,26 @@ input[type=button] {
   margin: 0;
 }
 
+.map figure {
+  width:100%;
+  height:0; /* height is set to 0 because padding element gives the height & width will auto-size based on browser size */
+  position: relative; /* video said set to absolute, lesson says to set to relative idk */
+  padding-bottom: 70%; /* sets-up relationship bet. Ht and W of the map ie: map's aspect ratio instead of the width="600" height="450" 
+  4:3 aspect ratio from google will be used to maintain map on diff browswer sizes: 75% = 450/600, if wanted a square map then set padding-bottom to 100%*/
+ /* video says 75% but then lesson says 125%, Notes from lesson: Relative positioning means an element is positioned relative to its normal spot on the page. 
+ In other words, you can adjust it to the top, bottom, right, or left without interrupting the flow of the other elements on the page. That’s very important here because the map figure will be the container for the map. Because you’re placing the iFrame inside of this figure, you’ll also set the padding-bottom to 125% to create enough space for the map.*/
+  overflow:hidden; /* determines whether a child elment can exceed a parent's height and width; we don't want it to go over the map container box so overflow is set to hidden*/
+}
+
+.map iframe {
+  position:absolute; /* because the height is tech. 0 for the container this is needed for the box Notes from lesson: Absolute positioning means an element – like the map iFrame, in this example – will be positioned relative to the nearest parent element (the map figure). By using positioning in this way, 
+  the map can shrink or expand to be responsive without interrupting the flow of the page’s other elements. Everything stays nice and aligned and your map is responsive.*/
+  top: 0; /* so it fill fill the div container and be flush w the top of the container*/
+  left:0; /* so it fill fill the div container and be flush w the left of the container*/
+  width:100%; /* we want iframe of map to fill 100% of the width of iframe */
+  height:100%; /* we want iframe of map to fill 100% of the height of iframe */
+}
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
