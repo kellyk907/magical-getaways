@@ -241,7 +241,7 @@ footer .social-icons {
 footer .social-icons p {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 footer .copyright {
